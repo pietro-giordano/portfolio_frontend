@@ -10,10 +10,10 @@ export default {
 </script>
 
 <template>
-      <div class="bg-bblack h-screen">
+      <header class="bg-bblack h-screen">
             <Navbar />
 
-      </div>
+      </header>
 </template>
 
 <style></style>
