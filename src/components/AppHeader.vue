@@ -5,7 +5,34 @@ export default {
       name: 'AppHeader',
       components: {
             Navbar,
-      }
+      },
+      data() {
+            return {
+                  social: [
+                        {
+                              name: 'facebook',
+                              icon: '<font-awesome-icon icon="fa-brands fa-facebook" />',
+                              link: '#'
+                        }, {
+                              name: 'instagram',
+                              icon: '<font-awesome-icon icon="fa-brands fa-instagram" />',
+                              link: '#'
+                        }, {
+                              name: 'linkedin',
+                              icon: '<font-awesome-icon icon="fa-brands fa-linkedin" />',
+                              link: '#'
+                        }, {
+                              name: 'discord',
+                              icon: '<font-awesome-icon icon="fa-brands fa-discord" />',
+                              link: '#'
+                        }, {
+                              name: 'github',
+                              icon: '<font-awesome-icon icon="fa-brands fa-github" />',
+                              link: '#'
+                        },
+                  ],
+            }
+      },
 }
 </script>
 
@@ -26,6 +53,16 @@ export default {
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit consequatur?
                               Itaque vel quisquam nulla assumenda? Tenetur aut fugiat soluta?
                         </p>
+
+                        <div>
+                              <ul>
+                                    <li v-for="item in social">
+                                          <a href="">
+                                                <font-awesome-icon icon="`${{ item.icon }}`" />
+                                          </a>
+                                    </li>
+                              </ul>
+                        </div>
                   </div>
 
                   <div class="border-2 border-orange">
