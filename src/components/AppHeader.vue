@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-      <header class="bg-bblack h-screen">
+      <header class="bg-bblack h-screen border-2 border-orange">
             <Navbar />
 
             <div id="jumbotron" class="container mx-auto grid grid-cols-2">
