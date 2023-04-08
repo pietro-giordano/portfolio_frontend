@@ -10,15 +10,22 @@ export default {
 </script>
 
 <template>
-      <header class="bg-bblack h-screen border-2 border-orange">
+      <header class="bg-bblack h-screen">
             <Navbar />
 
-            <div id="jumbotron" class="container mx-auto grid grid-cols-2">
-                  <div class="text-orange-very font-bold text-4xl leading-relaxed border-2 border-white">
-                        Hi, It's me
-                        <h1 class="text-6xl text-orange-light">Pietro Giordano</h1>
-                        And I'm a
-                        <h2 class="text-orange">Jr. Full Stack Web Developer</h2>
+            <div id="jumbotron" class="h-screen container mx-auto grid grid-cols-2">
+                  <div class="mt-40 text-orange-very border-2 border-white">
+                        <div class="font-bold text-4xl leading-relaxed">
+                              Hi, It's me
+                              <h1 class="text-6xl text-orange-light">Pietro Giordano</h1>
+                              And I'm a
+                              <h2 class="text-orange">Jr. Full Stack Web Developer</h2>
+                        </div>
+
+                        <p class="py-5">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit consequatur?
+                              Itaque vel quisquam nulla assumenda? Tenetur aut fugiat soluta?
+                        </p>
                   </div>
 
                   <div class="border-2 border-orange">

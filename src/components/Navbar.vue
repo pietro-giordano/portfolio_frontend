@@ -41,7 +41,8 @@ export default {
 </script>
 
 <template>
-      <nav class="container mx-auto h-24 flex justify-center items-center border-white border-2">
+      <nav
+            class="container mx-auto fixed start-0 top-0 end-0 z-10 h-24 flex justify-center items-center border-white border-2">
             <ul class="flex ">
                   <li v-for="link, index in navLinks" class="m-5" @click="activeNav(index)">
                         <a :href="link.link" class="p-3 hover:text-orange text-lg"
