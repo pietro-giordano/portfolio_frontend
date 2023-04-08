@@ -56,14 +56,19 @@ export default {
 
                         <div>
                               <ul class="flex">
-                                    <li v-for="item in social"
-                                          class="flex justify-center items-center w-12 h-12 text-orange-light border-2 border-orange-light rounded-full me-3 hover:text-orange hover:border-orange">
-                                          <a :href="item.link" class="p-2">
+                                    <li v-for="item in social" class=" text-orange-light">
+                                          <a :href="item.link"
+                                                class="flex justify-center items-center w-12 h-12 border-2 border-orange-light rounded-full me-5
+                                                                  hover:text-bblack hover:border-orange-light hover:bg-orange-light hover:shadow-o hover:shadow-orange-light">
                                                 <font-awesome-icon :icon="`${item.icon}`" size="xl" />
                                           </a>
                                     </li>
                               </ul>
                         </div>
+
+                        <button>
+                              Download CV
+                        </button>
                   </div>
 
                   <div class="border-2 border-orange">

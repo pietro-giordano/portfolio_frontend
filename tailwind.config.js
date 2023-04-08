@@ -12,6 +12,9 @@ export default {
                   'orange-very': '#ffe6c7',
                   'white': 'white'
             },
+            boxShadow: {
+                  'o': '0px 0px 10px 4px #FFA559'
+            },
             extend: {},
       },
       plugins: [],
