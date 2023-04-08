@@ -57,14 +57,14 @@ export default {
                         <ul class="flex mt-2">
                               <li v-for="item in social" class=" ">
                                     <a :href="item.link"
-                                          class="flex justify-center items-center w-12 h-12 border-2 border-orange-light rounded-full me-5
-                                                                        text-orange-light hover:text-bblack hover:border-orange-light hover:bg-orange-light hover:shadow-o">
+                                          class="flex justify-center items-center w-12 h-12 border-2 border-orange-light rounded-full me-5 text-orange-light hover:text-bblack hover:border-orange-light hover:bg-orange-light hover:shadow-o transition-shadow duration-75">
                                           <font-awesome-icon :icon="`${item.icon}`" size="xl" />
                                     </a>
                               </li>
                         </ul>
 
-                        <button class="mt-8 px-6 py-3 font-bold rounded-3xl text-bblack bg-orange-light hover:shadow-o">
+                        <button
+                              class="mt-8 px-6 py-3 font-bold text-lg rounded-3xl text-bblack bg-orange-light shadow-o hover:shadow-none tracking-wider transition-shadow duration-500">
                               Download CV
                         </button>
                   </div>
