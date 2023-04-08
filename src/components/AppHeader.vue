@@ -12,15 +12,15 @@ export default {
                         {
                               name: 'facebook',
                               icon: 'fa-brands fa-facebook',
-                              link: '#'
+                              link: 'https://www.facebook.com/pietro.giordano.87/'
                         }, {
                               name: 'instagram',
                               icon: 'fa-brands fa-instagram',
-                              link: '#'
+                              link: 'https://www.instagram.com/pietro.giordano.87/'
                         }, {
                               name: 'linkedin',
                               icon: 'fa-brands fa-linkedin',
-                              link: '#'
+                              link: 'https://www.linkedin.com/in/pietro-giordano87/'
                         }, {
                               name: 'discord',
                               icon: 'fa-brands fa-discord',
@@ -28,7 +28,7 @@ export default {
                         }, {
                               name: 'github',
                               icon: 'fa-brands fa-github',
-                              link: '#'
+                              link: 'https://github.com/prtruz87'
                         },
                   ],
             }
@@ -54,19 +54,17 @@ export default {
                               Itaque vel quisquam nulla assumenda? Tenetur aut fugiat soluta?
                         </p>
 
-                        <div>
-                              <ul class="flex">
-                                    <li v-for="item in social" class=" text-orange-light">
-                                          <a :href="item.link"
-                                                class="flex justify-center items-center w-12 h-12 border-2 border-orange-light rounded-full me-5
-                                                                  hover:text-bblack hover:border-orange-light hover:bg-orange-light hover:shadow-o hover:shadow-orange-light">
-                                                <font-awesome-icon :icon="`${item.icon}`" size="xl" />
-                                          </a>
-                                    </li>
-                              </ul>
-                        </div>
+                        <ul class="flex mt-2">
+                              <li v-for="item in social" class=" ">
+                                    <a :href="item.link"
+                                          class="flex justify-center items-center w-12 h-12 border-2 border-orange-light rounded-full me-5
+                                                                        text-orange-light hover:text-bblack hover:border-orange-light hover:bg-orange-light hover:shadow-o">
+                                          <font-awesome-icon :icon="`${item.icon}`" size="xl" />
+                                    </a>
+                              </li>
+                        </ul>
 
-                        <button>
+                        <button class="mt-8 px-6 py-3 font-bold rounded-3xl text-bblack bg-orange-light hover:shadow-o">
                               Download CV
                         </button>
                   </div>
