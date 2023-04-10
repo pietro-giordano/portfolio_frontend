@@ -33,6 +33,32 @@ export default {
                   ],
             }
       },
+      methods: {
+
+            // funzione cambia testo
+            changeText() {
+                  setTimeout(() => {
+                        this.$refs.textmation.textContent = 'Jr Full Stack Web Developer';
+                  }, 0);
+                  setTimeout(() => {
+                        this.$refs.textmation.textContent = 'Jr Front End Web Developer';
+                  }, 6150);
+                  setTimeout(() => {
+                        this.$refs.textmation.textContent = 'Jr Back End Web Developer';
+                  }, 12300);
+            },
+            resetText() {
+                  setInterval(this.changeText(), 18450);
+            }
+      },
+      mounted() {
+
+            this.changeText();
+      },
+      created() {
+
+            setInterval(this.changeText(), 18450);
+      }
 }
 </script>
 
@@ -46,7 +72,7 @@ export default {
                               Hi, It's me
                               <h1 class="text-6xl text-orange-light">Pietro Giordano</h1>
                               And I'm a
-                              <h2
+                              <h2 ref="textmation"
                                     class="inline-block text-orange relative before:absolute before:top-0 before:start-0 before:h-full before:w-full before:bg-bblack before:border-s-4 before:border-orange before:animate-textmation">
                                     Jr Full Stack Web Developer</h2>
                         </div>
