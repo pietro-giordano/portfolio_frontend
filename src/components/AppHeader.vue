@@ -46,7 +46,9 @@ export default {
                               Hi, It's me
                               <h1 class="text-6xl text-orange-light">Pietro Giordano</h1>
                               And I'm a
-                              <h2 class="text-orange">Jr. Full Stack Web Developer</h2>
+                              <h2
+                                    class="inline-block text-orange relative before:absolute before:top-0 before:start-0 before:h-full before:w-full before:bg-bblack before:border-s-4 before:border-orange before:animate-textmation">
+                                    Jr Full Stack Web Developer</h2>
                         </div>
 
                         <p class="py-5 text-orange-very">
