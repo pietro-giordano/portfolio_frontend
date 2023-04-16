@@ -37,6 +37,7 @@ export default {
 
             // funzione cambia testo
             changeText() {
+                  // setInterval(() => {
                   setTimeout(() => {
                         this.$refs.textmation.textContent = 'Jr Full Stack Web Developer';
                   }, 0);
@@ -46,19 +47,13 @@ export default {
                   setTimeout(() => {
                         this.$refs.textmation.textContent = 'Jr Back End Web Developer';
                   }, 12300);
+                  // }, 18450);
             },
-            resetText() {
-                  setInterval(this.changeText(), 18450);
-            }
       },
       mounted() {
 
             this.changeText();
       },
-      created() {
-
-            setInterval(this.changeText(), 18450);
-      }
 }
 </script>
 
