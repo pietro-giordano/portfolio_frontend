@@ -19,7 +19,7 @@ export default {
             extend: {
                   // aggiunta animazione custom testo jumbotron
                   animation: {
-                        textmation: 'textmation 6s steps(25) infinite'
+                        textmation: 'textmation 6s steps(24) infinite'
                   },
                   keyframes: {
                         textmation: {
