@@ -66,15 +66,15 @@ export default {
       <header class="bg-bblack h-screen">
             <Navbar />
 
-            <div id="jumbotron" class="h-screen container mx-auto grid grid-cols-2">
+            <div id="jumbotron" class="h-screen container mx-auto grid grid-cols lg:grid-cols-2">
                   <div class="mt-40 border-2 border-white">
                         <div class="font-bold text-4xl leading-relaxed text-orange-very">
                               Hi, It's me
-                              <h1 class="text-6xl text-orange-light">Pietro Giordano</h1>
+                              <div class="text-orange-light name">Pietro Giordano</div>
                               And I'm a
-                              <h2 ref="textmation"
-                                    class="inline-block text-orange relative before:absolute before:top-0 before:start-0 before:h-full before:w-full before:bg-bblack before:border-s-4 before:border-orange before:animate-textmation">
-                                    Jr Full Stack Web Developer</h2>
+                              <h1 ref="textmation"
+                                    class="overflow-hidden text-orange relative before:absolute before:top-0 before:start-0 before:h-full before:w-full before:bg-bblack before:border-s-4 before:border-orange before:animate-textmation">
+                                    Jr Full Stack Web Developer</h1>
                         </div>
 
                         <p class="py-5 text-orange-very">
@@ -104,4 +104,12 @@ export default {
       </header>
 </template>
 
-<style></style>
+<style>
+.name {
+      font-size: clamp(2.5rem, 9vw, 3.5rem);
+}
+
+h1 {
+      font-size: clamp(1.5rem, 6vw, 2.2rem);
+}
+</style>
