@@ -1,10 +1,12 @@
 <script>
+import VueWriter from 'vue-writer'
 import Navbar from './Navbar.vue';
 
 export default {
       name: 'AppHeader',
       components: {
             Navbar,
+            VueWriter
       },
       data() {
             return {
@@ -36,34 +38,34 @@ export default {
       methods: {
 
             // funzione cambia testo
-            changeText() {
-                  setTimeout(() => {
-                        this.$refs.textmation.textContent = 'Jr Full Stack Web Developer';
-                  }, 0);
-                  setTimeout(() => {
-                        this.$refs.textmation.textContent = 'Jr Front End Web Developer';
-                  }, 6150);
-                  setTimeout(() => {
-                        this.$refs.textmation.textContent = 'Jr Back End Web Developer';
-                  }, 12300);
-            },
-            resetText() {
-                  setInterval(this.changeText(), 18450);
-            }
+            // changeText() {
+            //       setTimeout(() => {
+            //             this.$refs.textmation.textContent = 'Jr Full Stack Web Developer';
+            //       }, 0);
+            //       setTimeout(() => {
+            //             this.$refs.textmation.textContent = 'Jr Front End Web Developer';
+            //       }, 6150);
+            //       setTimeout(() => {
+            //             this.$refs.textmation.textContent = 'Jr Back End Web Developer';
+            //       }, 12300);
+            // },
+            // resetText() {
+            //       setInterval(this.changeText(), 18450);
+            // }
       },
       mounted() {
 
-            this.changeText();
+            // this.changeText();
       },
       created() {
 
-            setInterval(this.changeText(), 18450);
+            // setInterval(this.changeText(), 18450);
       }
 }
 </script>
 
 <template>
-      <header class="bg-bblack h-screen">
+      <header class="h-screen">
             <Navbar />
 
             <div id="jumbotron" class="h-screen container mx-auto grid grid-cols lg:grid-cols-2">
@@ -72,9 +74,9 @@ export default {
                               Hi, It's me
                               <div class="text-orange-light name">Pietro Giordano</div>
                               And I'm a
-                              <h1 ref="textmation"
-                                    class="overflow-hidden text-orange relative before:absolute before:top-0 before:start-0 before:h-full before:w-full before:bg-bblack before:border-s-4 before:border-orange before:animate-textmation">
-                                    Jr Full Stack Web Developer</h1>
+                              <h1 class="text-orange">
+                                    <VueWriter :array="['Jr Front End', 'Jr Back End', 'Jr Full Stack Developer']" />
+                              </h1>
                         </div>
 
                         <p class="py-5 text-orange-very text-sm md:text-base">
@@ -82,11 +84,20 @@ export default {
                               Itaque vel quisquam nulla assumenda? Tenetur aut fugiat soluta?
                         </p>
 
-                        <ul class="flex mt-2">
+                        <ul class="md:flex mt-2 hidden">
                               <li v-for="item in social" class=" ">
                                     <a :href="item.link"
                                           class="flex justify-center items-center w-12 h-12 border-2 border-orange-light rounded-full me-3 md:me-5 text-orange-light hover:text-bblack hover:border-orange-light hover:bg-orange-light hover:shadow-o transition-shadow duration-75">
                                           <font-awesome-icon :icon="`${item.icon}`" size="xl" />
+                                    </a>
+                              </li>
+                        </ul>
+
+                        <ul class="flex mt-2 block md:hidden">
+                              <li v-for="item in social" class=" ">
+                                    <a :href="item.link"
+                                          class="flex justify-center items-center w-10 h-10 border-2 border-orange-light rounded-full me-3 md:me-5 text-orange-light hover:text-bblack hover:border-orange-light hover:bg-orange-light hover:shadow-o transition-shadow duration-75">
+                                          <font-awesome-icon :icon="`${item.icon}`" size="lg" />
                                     </a>
                               </li>
                         </ul>

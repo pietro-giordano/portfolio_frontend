@@ -18,15 +18,15 @@ export default {
             },
             extend: {
                   // aggiunta animazione custom testo jumbotron
-                  animation: {
-                        textmation: 'textmation 6s steps(24) infinite'
-                  },
-                  keyframes: {
-                        textmation: {
-                              '40%, 60%': { left: '100%' },
-                              '100%': { left: '0%' },
-                        }
-                  }
+                  // animation: {
+                  //       textmation: 'textmation 6s steps(24) infinite'
+                  // },
+                  // keyframes: {
+                  //       textmation: {
+                  //             '40%, 60%': { left: '100%' },
+                  //             '100%': { left: '0%' },
+                  //       }
+                  // }
                   // fine animazione testo jumbotron
             },
       },
