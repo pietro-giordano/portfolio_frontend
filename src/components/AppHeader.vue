@@ -70,12 +70,14 @@ export default {
 
             <div id="jumbotron" class="h-screen container mx-auto grid grid-cols lg:grid-cols-2">
                   <div class="mt-40 px-1 border-2 border-white">
-                        <div class="font-bold text-first leading-relaxed text-orange-very">
+                        <div class="font-bold text-first text-orange-very">
                               Hi, It's me
                               <div class="text-orange-light name">Pietro Giordano</div>
                               And I'm a
                               <h1 class="text-orange">
-                                    <VueWriter :array="['Jr Front End', 'Jr Back End', 'Jr Full Stack Developer']" />
+                                    <VueWriter
+                                          :array="['Jr Full Stack Developer', 'Jr Front End Developer', 'Jr Back End Developer']"
+                                          :typeSpeed="150" :eraseSpeed="100" :caret="cursor" />
                               </h1>
                         </div>
 
@@ -93,7 +95,7 @@ export default {
                               </li>
                         </ul>
 
-                        <ul class="flex mt-2 block md:hidden">
+                        <ul class="flex mt-2 md:hidden">
                               <li v-for="item in social" class=" ">
                                     <a :href="item.link"
                                           class="flex justify-center items-center w-10 h-10 border-2 border-orange-light rounded-full me-3 md:me-5 text-orange-light hover:text-bblack hover:border-orange-light hover:bg-orange-light hover:shadow-o transition-shadow duration-75">
@@ -126,5 +128,12 @@ export default {
 
 h1 {
       font-size: clamp(1.35rem, 6vw, 2.2rem);
+}
+
+.is-typed span.cursor {
+      display: inline-block;
+      width: 4px;
+      background-color: #ff6000;
+      animation: blink 1s infinite;
 }
 </style>
