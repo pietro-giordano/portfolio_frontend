@@ -35,32 +35,6 @@ export default {
                   ],
             }
       },
-      methods: {
-
-            // funzione cambia testo
-            // changeText() {
-            //       setTimeout(() => {
-            //             this.$refs.textmation.textContent = 'Jr Full Stack Web Developer';
-            //       }, 0);
-            //       setTimeout(() => {
-            //             this.$refs.textmation.textContent = 'Jr Front End Web Developer';
-            //       }, 6150);
-            //       setTimeout(() => {
-            //             this.$refs.textmation.textContent = 'Jr Back End Web Developer';
-            //       }, 12300);
-            // },
-            // resetText() {
-            //       setInterval(this.changeText(), 18450);
-            // }
-      },
-      mounted() {
-
-            // this.changeText();
-      },
-      created() {
-
-            // setInterval(this.changeText(), 18450);
-      }
 }
 </script>
 
@@ -75,6 +49,7 @@ export default {
                               <div class="text-orange-light name">Pietro Giordano</div>
                               And I'm a
                               <h1 class="text-orange">
+                                    <!-- componente vue-writer -->
                                     <VueWriter
                                           :array="['Jr Full Stack Developer', 'Jr Front End Developer', 'Jr Back End Developer']"
                                           :typeSpeed="150" :eraseSpeed="100" :caret="cursor" />
@@ -130,6 +105,7 @@ h1 {
       font-size: clamp(1.35rem, 6vw, 2.2rem);
 }
 
+/* stile cursore testo animato */
 .is-typed span.cursor {
       display: inline-block;
       width: 4px;
