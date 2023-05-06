@@ -26,6 +26,7 @@ export default {
                               active: false
                         },
                   ],
+                  hamburger: true,
             }
       },
       methods: {
@@ -36,26 +37,39 @@ export default {
                   });
                   this.navLinks[index].active = true;
             },
+
+            hamburgerVisibility() {
+                  if (this.hamburger) {
+                        this.hamburger = false;
+                  } else {
+                        this.hamburger = true;
+                  }
+            }
       }
 }
 </script>
 
 <template>
-      <nav
-            class="container mx-auto fixed start-0 top-0 end-0 z-10 h-24 flex justify-between items-center border-white border-2">
+      <nav class="container mx-auto sticky start-0 top-0 end-0 z-10 flex justify-between items-center border-white border-2">
             <h2 class="text-orange text-2xl uppercase px-1">Portfolio</h2>
 
             <!-- hamburger menu -->
-            <font-awesome-icon :icon="['fas', 'bars']" size="2xl" class="text-orange lg:hidden p-4" />
-            <font-awesome-icon :icon="['fas', 'xmark']" size="2xl" class="text-orange hidden p-4" />
-            <ul class="flex flex-col text-end">
-                  <li v-for="link, index in navLinks" class="ml-4" @click="activeNav(index)">
-                        <a :href="link.link" class="p-3 mt-3 hover:text-orange text-lg"
-                              :class="link.active ? 'text-orange' : 'text-orange-very'">
-                              {{ link.title }}
-                        </a>
-                  </li>
-            </ul>
+            <div class="text-end">
+                  <font-awesome-icon :icon="['fas', 'bars']" size="2xl" class="text-orange p-2 m-2 lg:hidden"
+                        :class="{ 'hidden': !hamburger }" @click="hamburgerVisibility" />
+
+                  <font-awesome-icon :icon="['fas', 'xmark']" size="2xl" class="text-orange p-2 m-2"
+                        :class="{ 'hidden': hamburger }" @click="hamburgerVisibility" />
+
+                  <ul :class="hamburger ? 'hidden' : 'block'">
+                        <li v-for="link, index in navLinks" @click="activeNav(index)">
+                              <a :href="link.link" class="p-3 hover:text-orange text-lg"
+                                    :class="link.active ? 'text-orange' : 'text-orange-very'">
+                                    {{ link.title }}
+                              </a>
+                        </li>
+                  </ul>
+            </div>
             <!-- fine hamburger menu -->
 
             <ul class="hidden lg:flex">

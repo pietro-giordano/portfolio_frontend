@@ -43,7 +43,7 @@ export default {
             <Navbar />
 
             <div id="jumbotron" class="h-screen container mx-auto grid grid-cols lg:grid-cols-2">
-                  <div class="mt-40 px-1 border-2 border-white">
+                  <div class="mt-20 px-1 border-2 border-white">
                         <div class="font-bold text-first text-orange-very">
                               Hi, It's me
                               <div class="text-orange-light name">Pietro Giordano</div>
