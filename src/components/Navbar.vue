@@ -6,7 +6,7 @@ export default {
                   navLinks: [
                         {
                               title: 'Home',
-                              link: '#',
+                              link: '#header',
                               active: true
                         }, {
                               title: 'About',
@@ -50,27 +50,30 @@ export default {
 </script>
 
 <template>
-      <nav class="container mx-auto sticky start-0 top-0 end-0 z-10 flex justify-between items-center border-white border-2">
-            <h2 class="text-orange text-2xl uppercase px-1">Portfolio</h2>
+      <nav
+            class="bg-bblack container mx-auto sticky start-0 top-0 end-0 z-10 flex justify-between items-start lg:items-center border-white border-2">
+            <div>
+                  <h2 class="text-orange text-xl lg:text-2xl uppercase px-1 my-5">Portfolio</h2>
 
-            <!-- hamburger menu -->
-            <div class="text-end">
-                  <font-awesome-icon :icon="['fas', 'bars']" size="2xl" class="text-orange p-2 m-2 lg:hidden"
-                        :class="{ 'hidden': !hamburger }" @click="hamburgerVisibility" />
-
-                  <font-awesome-icon :icon="['fas', 'xmark']" size="2xl" class="text-orange p-2 m-2"
-                        :class="{ 'hidden': hamburger }" @click="hamburgerVisibility" />
-
-                  <ul :class="hamburger ? 'hidden' : 'block'">
-                        <li v-for="link, index in navLinks" @click="activeNav(index)">
-                              <a :href="link.link" class="p-3 hover:text-orange text-lg"
+                  <!-- hamburger menu -->
+                  <ul :class="hamburger ? 'hidden' : 'block'" class="transition-all duration-300">
+                        <li v-for="link, index in navLinks" @click="activeNav(index)" class="my-3 mr-2">
+                              <a :href="link.link" class="p-1 hover:text-orange lg:text-lg"
                                     :class="link.active ? 'text-orange' : 'text-orange-very'">
                                     {{ link.title }}
                               </a>
                         </li>
                   </ul>
             </div>
-            <!-- fine hamburger menu -->
+
+            <!-- hamburger button -->
+            <div class="text-end">
+                  <font-awesome-icon :icon="['fas', 'bars']" size="2xl" class="text-orange p-2 m-2 lg:hidden"
+                        :class="{ 'hidden': !hamburger }" @click="hamburgerVisibility" />
+
+                  <font-awesome-icon :icon="['fas', 'xmark']" size="2xl" class="text-orange px-2 pt-2 mx-2 mt-2"
+                        :class="{ 'hidden': hamburger }" @click="hamburgerVisibility" />
+            </div>
 
             <ul class="hidden lg:flex">
                   <li v-for="link, index in navLinks" class="ml-4" @click="activeNav(index)">
@@ -83,4 +86,4 @@ export default {
       </nav>
 </template>
 
-<style></style>
+<style scoped></style>

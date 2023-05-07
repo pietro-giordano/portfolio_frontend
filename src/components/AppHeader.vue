@@ -39,11 +39,11 @@ export default {
 </script>
 
 <template>
-      <header class="h-screen">
+      <header id="header" class="h-screen">
             <Navbar />
 
             <div id="jumbotron" class="h-screen container mx-auto grid grid-cols lg:grid-cols-2">
-                  <div class="mt-20 px-1 border-2 border-white">
+                  <div class="mt-10 lg:mt-20 px-1 border-2 border-white">
                         <div class="font-bold text-first text-orange-very">
                               Hi, It's me
                               <div class="text-orange-light name">Pietro Giordano</div>
@@ -92,7 +92,7 @@ export default {
       </header>
 </template>
 
-<style>
+<style scoped>
 .text-first {
       font-size: clamp(1.3rem, 6vw, 2rem);
 }

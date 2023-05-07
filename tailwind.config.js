@@ -16,19 +16,6 @@ export default {
                   'none': '0px 0px 0px 0px #000',
                   'o': '0px 0px 10px 4px #FFA559'
             },
-            extend: {
-                  // aggiunta animazione custom testo jumbotron
-                  // animation: {
-                  //       textmation: 'textmation 6s steps(24) infinite'
-                  // },
-                  // keyframes: {
-                  //       textmation: {
-                  //             '40%, 60%': { left: '100%' },
-                  //             '100%': { left: '0%' },
-                  //       }
-                  // }
-                  // fine animazione testo jumbotron
-            },
       },
       plugins: [],
 }
