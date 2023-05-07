@@ -39,11 +39,7 @@ export default {
             },
 
             hamburgerVisibility() {
-                  if (this.hamburger) {
-                        this.hamburger = false;
-                  } else {
-                        this.hamburger = true;
-                  }
+                  this.hamburger = !this.hamburger;
             }
       }
 }
@@ -56,7 +52,7 @@ export default {
                   <h2 class="text-orange text-xl lg:text-2xl uppercase px-1 my-5">Portfolio</h2>
 
                   <!-- hamburger menu -->
-                  <ul :class="hamburger ? 'hidden' : 'block'" class="transition-all duration-300">
+                  <ul :class="hamburger ? 'hidden' : 'block'">
                         <li v-for="link, index in navLinks" @click="activeNav(index)" class="my-3 mr-2">
                               <a :href="link.link" class="p-1 hover:text-orange lg:text-lg"
                                     :class="link.active ? 'text-orange' : 'text-orange-very'">

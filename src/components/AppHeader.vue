@@ -39,10 +39,10 @@ export default {
 </script>
 
 <template>
-      <header id="header" class="h-screen">
+      <header id="header">
             <Navbar />
 
-            <div id="jumbotron" class="h-screen container mx-auto grid grid-cols lg:grid-cols-2">
+            <div id="jumbotron" class="container mx-auto grid grid-cols lg:grid-cols-2">
                   <div class="mt-10 lg:mt-20 px-1 border-2 border-white">
                         <div class="font-bold text-first text-orange-very">
                               Hi, It's me
@@ -85,8 +85,8 @@ export default {
                         </button>
                   </div>
 
-                  <div class="border-2 border-orange">
-
+                  <div class="border-2 border-orange p-28">
+                        <img src="../assets/foto1.jpg" alt="" class="">
                   </div>
             </div>
       </header>
