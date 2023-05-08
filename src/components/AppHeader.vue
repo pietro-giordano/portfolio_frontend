@@ -39,11 +39,11 @@ export default {
 </script>
 
 <template>
-      <header id="header">
+      <header id="header" class="">
             <Navbar />
 
-            <div id="jumbotron" class="container mx-auto grid grid-cols lg:grid-cols-2">
-                  <div class="mt-10 lg:mt-20 px-1 border-2 border-white">
+            <div id="jumbotron" class="container mx-auto grid grid-cols lg:grid-cols-2 min-h-screen">
+                  <div class="mt-28 lg:mt-40 px-1 border-2 border-white">
                         <div class="font-bold text-first text-orange-very">
                               Hi, It's me
                               <div class="text-orange-light name">Pietro Giordano</div>
@@ -85,8 +85,11 @@ export default {
                         </button>
                   </div>
 
-                  <div class="border-2 border-orange p-28">
-                        <img src="../assets/foto1.jpg" alt="" class="">
+                  <div class="border-2 border-orange flex justify-center items-center mt-10">
+                        <div
+                              class="w-[400px] h-[400px] relative flex justify-center items-center animated-border overflow-hidden rounded-xl">
+                              <img src="../assets/foto1.jpg" alt="" class="w-11/12 h-11/12 z-10 absolute rounded-xl">
+                        </div>
                   </div>
             </div>
       </header>
@@ -111,5 +114,37 @@ h1 {
       width: 4px;
       background-color: #ff6000;
       animation: blink 1s infinite;
+}
+
+/* animazione bordi foto */
+.animated-border::after {
+      content: '';
+      position: absolute;
+      width: 550px;
+      height: 550px;
+      background-image: conic-gradient(transparent, transparent, transparent, #ffa559);
+      animation: animate 4s linear infinite;
+      animation-delay: -2s;
+}
+
+.animated-border::before {
+      content: '';
+      position: absolute;
+      width: 550px;
+      height: 550px;
+      background-image: conic-gradient(transparent, transparent, transparent, #ff6000);
+      animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+      0% {
+            transform: rotate(0deg);
+      }
+
+      100% {
+            transform: rotate(360deg);
+      }
+
+      /* fine animazione bordi */
 }
 </style>
