@@ -1,5 +1,6 @@
 <script>
-import VueWriter from 'vue-writer'
+import VueWriter from 'vue-writer';
+import scrollreveal from 'scrollreveal';
 import Navbar from './Navbar.vue';
 
 export default {
@@ -35,6 +36,17 @@ export default {
                   ],
             }
       },
+      mounted() {
+            scrollreveal({
+                  reset: true,
+                  distance: '80px',
+                  duration: 2000,
+                  delay: 200
+            })
+            scrollreveal().reveal(this.$refs.right, { origin: 'right' });
+            scrollreveal().reveal(this.$refs.top, { origin: 'top' });
+            scrollreveal().reveal(this.$refs.left, { origin: 'left' });
+      }
 }
 </script>
 
@@ -42,11 +54,11 @@ export default {
       <header id="header" class="">
             <Navbar />
 
-            <div id="jumbotron" class="container mx-auto grid grid-cols lg:grid-cols-2 min-h-screen">
+            <div id="jumbotron" ref="top" class="container mx-auto grid grid-cols lg:grid-cols-2 min-h-screen">
                   <div class="mt-28 lg:mt-40 px-1 border-2 border-white">
                         <div class="font-bold text-first text-orange-very">
                               Hi, It's me
-                              <div class="text-orange-light name">Pietro Giordano</div>
+                              <div ref="left" class="text-orange-light name">Pietro Giordano</div>
                               And I'm a
                               <h1 class="text-orange">
                                     <!-- componente vue-writer -->
@@ -86,9 +98,9 @@ export default {
                   </div>
 
                   <div class="border-2 border-orange flex justify-center items-center mt-10">
-                        <div
-                              class="w-[400px] h-[400px] relative flex justify-center items-center animated-border overflow-hidden rounded-xl">
-                              <img src="../assets/foto1.jpg" alt="" class="w-11/12 h-11/12 z-10 absolute rounded-xl">
+                        <div ref="right"
+                              class="sr w-[280px] h-[280px] md:w-[400px] md:h-[400px] relative flex justify-center items-center animated-border overflow-hidden rounded-full">
+                              <img src="../assets/foto1.jpg" alt="" class="w-11/12 h-11/12 z-10 absolute rounded-full">
                         </div>
                   </div>
             </div>
@@ -146,5 +158,10 @@ h1 {
       }
 
       /* fine animazione bordi */
+}
+
+/* per scrollreveal */
+.sr {
+      visibility: hidden;
 }
 </style>
