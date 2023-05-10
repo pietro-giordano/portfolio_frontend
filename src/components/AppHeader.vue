@@ -43,9 +43,10 @@ export default {
                   duration: 2000,
                   delay: 200
             })
-            scrollreveal().reveal(this.$refs.right, { origin: 'right' });
+            scrollreveal().reveal(this.$refs.bottom, { origin: 'bottom' });
             scrollreveal().reveal(this.$refs.top, { origin: 'top' });
             scrollreveal().reveal(this.$refs.left, { origin: 'left' });
+            scrollreveal().reveal(this.$refs.right, { origin: 'right' });
       }
 }
 </script>
@@ -54,11 +55,11 @@ export default {
       <header id="header" class="">
             <Navbar />
 
-            <div id="jumbotron" ref="top" class="container mx-auto grid grid-cols lg:grid-cols-2 min-h-screen">
-                  <div class="mt-28 lg:mt-40 px-1 border-2 border-white">
+            <div id="jumbotron" class="container mx-auto grid grid-cols lg:grid-cols-2 min-h-screen">
+                  <div ref="top" class="sr mt-28 lg:mt-40 px-1 border-2 border-white">
                         <div class="font-bold text-first text-orange-very">
                               Hi, It's me
-                              <div ref="left" class="text-orange-light name">Pietro Giordano</div>
+                              <div ref="left" class="sr text-orange-light name">Pietro Giordano</div>
                               And I'm a
                               <h1 class="text-orange">
                                     <!-- componente vue-writer -->
@@ -91,15 +92,15 @@ export default {
                               </li>
                         </ul>
 
-                        <button
-                              class="mt-8 px-3 py-2 md:px-6 md:py-3 font-bold md:text-lg rounded-3xl text-bblack bg-orange-light shadow-o hover:shadow-none tracking-wider transition-shadow duration-500">
+                        <button ref="right"
+                              class="sr mt-8 px-3 py-2 md:px-6 md:py-3 font-bold md:text-lg rounded-3xl text-bblack bg-orange-light shadow-o hover:shadow-none tracking-wider transition-shadow duration-500">
                               Download CV
                         </button>
                   </div>
 
-                  <div class="border-2 border-orange flex justify-center items-center mt-10">
-                        <div ref="right"
-                              class="sr w-[280px] h-[280px] md:w-[400px] md:h-[400px] relative flex justify-center items-center animated-border overflow-hidden rounded-full">
+                  <div ref="bottom" class="sr border-2 border-orange flex justify-center items-center mt-16 lg:mt-20">
+                        <div
+                              class="w-[280px] h-[280px] md:w-[400px] md:h-[400px] relative flex justify-center items-center animated-border overflow-hidden rounded-full">
                               <img src="../assets/foto1.jpg" alt="" class="w-11/12 h-11/12 z-10 absolute rounded-full">
                         </div>
                   </div>
@@ -156,9 +157,30 @@ h1 {
       100% {
             transform: rotate(360deg);
       }
-
-      /* fine animazione bordi */
 }
+
+/* fine animazione bordi */
+
+/* animazione float image */
+.animated-border {
+      animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+      0% {
+            transform: translateY(0);
+      }
+
+      50% {
+            transform: translateY(-2.2rem);
+      }
+
+      100% {
+            transform: translateY(0);
+      }
+}
+
+/* fine animazione float image */
 
 /* per scrollreveal */
 .sr {
