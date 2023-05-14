@@ -52,7 +52,7 @@ export default {
 </script>
 
 <template>
-      <header id="header" class="">
+      <header id="header">
             <Navbar />
 
             <div id="jumbotron" class="container mx-auto grid grid-cols lg:grid-cols-2 min-h-screen">

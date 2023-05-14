@@ -7,6 +7,8 @@ export default {
       theme: {
             colors: {
                   'bblack': '#1f1e1a',
+                  'grey': '#494844',
+                  'grey-light': '#5d5c59',
                   'orange': '#ff6000',
                   'orange-light': '#FFA559',
                   'orange-very': '#ffe6c7',

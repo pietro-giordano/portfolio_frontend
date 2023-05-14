@@ -22,7 +22,7 @@ export default {
                               active: false
                         }, {
                               title: 'Contact',
-                              link: '#',
+                              link: '#contact',
                               active: false
                         },
                   ],
