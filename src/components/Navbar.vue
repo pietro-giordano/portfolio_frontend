@@ -10,15 +10,15 @@ export default {
                               active: true
                         }, {
                               title: 'About',
-                              link: '#',
+                              link: '#aboutMe',
                               active: false
                         }, {
                               title: 'Skills',
-                              link: '#',
+                              link: '#skills',
                               active: false
                         }, {
                               title: 'Portfolio',
-                              link: '#',
+                              link: '#portfolio',
                               active: false
                         }, {
                               title: 'Contact',
