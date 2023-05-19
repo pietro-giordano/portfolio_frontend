@@ -10,7 +10,7 @@ export default {
                               active: true
                         }, {
                               title: 'About',
-                              link: '#aboutMe',
+                              link: '#about',
                               active: false
                         }, {
                               title: 'Skills',
