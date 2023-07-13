@@ -55,7 +55,7 @@ export default {
       <header id="header">
             <Navbar />
 
-            <div id="jumbotron" class="container mx-auto grid grid-cols lg:grid-cols-2 max-h-screen">
+            <div id="jumbotron" class="container mx-auto grid grid-cols lg:grid-cols-2">
                   <div ref="top" class="sr mt-28 lg:mt-40 px-1 border-2 border-white">
                         <div class="font-bold text-first text-orange-very">
                               Hi, It's me

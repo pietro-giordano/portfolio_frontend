@@ -22,7 +22,7 @@ export default {
 <template>
       <section id="contact" class="container mx-auto">
 
-            <div class="border-2 border-white min-h-screen">
+            <div class="border-2 border-white">
                   <h2 ref="top" class="sm text-orange-very text-lg mt-28 mb-8 text-center">Contact <span
                               class="text-orange">Me!</span>
                   </h2>

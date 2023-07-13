@@ -16,7 +16,8 @@ export default {
             },
             boxShadow: {
                   'none': '0px 0px 0px 0px #000',
-                  'o': '0px 0px 10px 4px #FFA559'
+                  'o': '0px 0px 10px 6px #FFA559',
+                  'o2': '0px 0px 8px 6px #FFA559'
             },
       },
       plugins: [],

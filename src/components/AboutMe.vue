@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-      <section id="about" class="container mx-auto min-h-screen mt-28 md:mt-80 lg:mt-0">
+      <section id="about" class="container mx-auto mt-28 md:mt-80 lg:mt-0">
 
             <h2 ref="right" class="sm text-orange-very text-lg pt-28 mb-8 text-center">About <span
                         class="text-orange">Me</span>
@@ -31,7 +31,7 @@ export default {
                         </div>
                   </div>
 
-                  <div ref="bottom" class="border-2 border-orange px-12 pt-20 text-center">
+                  <div ref="bottom" class="border-2 border-orange px-12 pt-8 md:pt-14 lg:pt-20 text-center">
                         <p class="text-orange-very">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                               blanditiis ullam inventore animi
                               assumenda doloribus, sit aspernatur ducimus praesentium repudiandae. Soluta provident voluptates
