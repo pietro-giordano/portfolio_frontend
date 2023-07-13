@@ -28,7 +28,7 @@ export default {
 
             <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-4 lg:gap-6 my-12">
                   <div v-for="skill in skills" class="border-4 border-orange-light bg-orange-very rounded-3xl p-6">
-                        <img :src="skill.logo" :alt="skill.name">
+                        <img :src="skill.logo" :alt="skill.name" class="d-block h-24">
                         <p class="text-orange text-center mt-4">{{ skill.name }}</p>
                   </div>
             </div>
