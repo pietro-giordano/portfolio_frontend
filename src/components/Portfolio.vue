@@ -5,10 +5,9 @@ export default {
 </script>
 
 <template>
-      <section id="portfolio" class="container mx-auto">
+      <section id="portfolio" class="container mx-auto pt-14 md:pt-20 lg:pt-28">
 
-            <h2 ref="top" class="sm text-orange-very text-lg pt-28 mb-8 text-center">Latest <span
-                        class="text-orange">Project</span>
+            <h2 ref="top" class="sm text-orange-very text-lg mb-8 text-center">Latest <span class="text-orange">Project</span>
             </h2>
 
       </section>

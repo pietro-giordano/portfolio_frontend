@@ -18,10 +18,9 @@ export default {
 </script>
 
 <template>
-      <section id="about" class="container mx-auto mt-28 md:mt-80 lg:mt-0">
+      <section id="about" class="container mx-auto pt-14 md:pt-20 lg:pt-28">
 
-            <h2 ref="right" class="sm text-orange-very text-lg pt-28 mb-8 text-center">About <span
-                        class="text-orange">Me</span>
+            <h2 ref="right" class="sm text-orange-very text-lg mb-8 text-center">About <span class="text-orange">Me</span>
             </h2>
 
             <div class="grid grid-cols lg:grid-cols-2">

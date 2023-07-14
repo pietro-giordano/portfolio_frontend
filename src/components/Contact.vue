@@ -20,10 +20,10 @@ export default {
 </script>
 
 <template>
-      <section id="contact" class="container mx-auto">
+      <section id="contact" class="container mx-auto pt-14 md:pt-20 lg:pt-28">
 
             <div class="border-2 border-white">
-                  <h2 ref="top" class="sm text-orange-very text-lg mt-28 mb-8 text-center">Contact <span
+                  <h2 ref="top" class="sm text-orange-very text-lg mb-8 text-center">Contact <span
                               class="text-orange">Me!</span>
                   </h2>
 
