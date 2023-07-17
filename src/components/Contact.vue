@@ -29,6 +29,17 @@ export default {
             scrollreveal().reveal(this.$refs.right, { origin: 'right' });
       },
       methods: {
+            // alert di sweetAlert2
+            sweetAlert(text, state) {
+                  return this.$swal({
+                        html: text,
+                        icon: state,
+                        confirmButtonText: 'Close',
+                        background: '#ffe6c7',
+                        confirmButtonColor: '#ff6000'
+                  });
+            },
+
             messagePost() {
                   axios
                         .post('http://127.0.0.1:8000/api/messages', {
@@ -40,7 +51,12 @@ export default {
                         })
                         .then(response => {
                               console.log(response.data);
+                              this.sweetAlert('Message sent, you will receive reply soon', 'success');
                         })
+                        .catch(error => {
+                              console.log(error);
+                              this.sweetAlert(error.response.data.message, 'error');
+                        });
             }
       }
 }
@@ -56,10 +72,12 @@ export default {
 
                   <form @submit.prevent action="" method="post" class="w-full flex flex-col items-center">
                         <div ref="left1" class="sm w-full md:w-3/4 lg:w-2/3 flex flex-col md:flex-row items-center">
-                              <input v-model="message.name" type="text" name="fullname" id="fullname" placeholder="Full Name"
+                              <input v-model="message.name" type="text" name="fullname" id="fullname"
+                                    placeholder="Full Name (required)" required
                                     class="w-11/12 md:w-1/2 m-1 px-4 py-2 bg-grey border-2 border-orange-light rounded-lg text-orange-very placeholder:text-orange-very placeholder:text-xs md:placeholder:text-sm focus:outline-none focus:border-orange-very">
 
-                              <input v-model="message.email" type="email" name="email" id="email" placeholder="Email Address"
+                              <input v-model="message.email" type="email" name="email" id="email"
+                                    placeholder="Email Address (required)" required
                                     class="w-11/12 md:w-1/2 m-1 px-4 py-2 bg-grey border-2 border-orange-light rounded-lg text-orange-very placeholder:text-orange-very placeholder:text-xs md:placeholder:text-sm focus:outline-none focus:border-orange-very">
                         </div>
 
@@ -74,7 +92,7 @@ export default {
 
                         <div ref="right" class="sm w-full flex justify-center md:w-3/4 lg:w-2/3">
                               <textarea v-model="message.message" name="message" id="message" cols="30" rows="10"
-                                    placeholder="Your Message"
+                                    placeholder="Your Message (required)" required
                                     class="w-11/12 md:w-full m-1 px-4 py-2 bg-grey border-2 border-orange-light rounded-lg text-orange-very placeholder:text-orange-very placeholder:text-xs md:placeholder:text-sm focus:outline-none focus:border-orange-very"></textarea>
                         </div>
 
