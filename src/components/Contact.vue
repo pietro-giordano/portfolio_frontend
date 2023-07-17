@@ -39,7 +39,7 @@ export default {
                               message: this.message.message
                         })
                         .then(response => {
-                              console.log(response);
+                              console.log(response.data);
                         })
             }
       }
