@@ -9,7 +9,7 @@ export default {
                   message: {
                         name: "",
                         email: "",
-                        phone: "",
+                        mobile: "",
                         object: "",
                         message: ""
                   }
@@ -82,7 +82,7 @@ export default {
                         </div>
 
                         <div ref="left2" class="sm w-full md:w-3/4 lg:w-2/3 flex flex-col md:flex-row items-center">
-                              <input v-model="message.phone" type="tel" name="phone" id="phone" placeholder="Mobile Number"
+                              <input v-model="message.mobile" type="tel" name="phone" id="phone" placeholder="Mobile Number"
                                     class="w-11/12 md:w-1/2 m-1 px-4 py-2 bg-grey border-2 border-orange-light rounded-lg text-orange-very placeholder:text-orange-very placeholder:text-xs md:placeholder:text-sm focus:outline-none focus:border-orange-very">
 
                               <input v-model="message.object" type="text" name="email_subject" id="email_subject"
