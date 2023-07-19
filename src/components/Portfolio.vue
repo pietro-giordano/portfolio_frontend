@@ -34,14 +34,14 @@ export default {
 <template>
       <section id="portfolio" class="container mx-auto pt-14 md:pt-20 lg:pt-28">
 
-            <h2 ref="right" class="sm text-orange-very text-lg pb-4 text-center">Latest <span
+            <h2 ref="right" class="sr text-orange-very text-lg pb-4 text-center">Latest <span
                         class="text-orange">Project</span>
             </h2>
 
-            <div ref="left" class="px-6">
+            <div ref="left" class="sr px-6">
                   <div v-for="project in projects"
                         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-2 border-orange shadow-o3 rounded-xl min-h-80 my-10 p-2">
-                        <div class="border-2 border-orange-very text-orange-very p-2">
+                        <div class="text-orange-very p-2">
                               <h4 class="font-bold uppercase text-2xl text-center">
                                     {{ project.name }}
                               </h4>
@@ -61,12 +61,11 @@ export default {
                               </ul>
                         </div>
 
-                        <div class="border-2 border-orange-very flex items-center">
+                        <div class="flex items-center my-5 border-2 border-orange-very">
                               <video :src="project.video" controls></video>
                         </div>
 
-                        <div
-                              class="border-2 border-orange-very md:col-span-2 lg:col-span-1 text-orange-very p-2 flex items-center">
+                        <div class="md:col-span-2 lg:col-span-1 text-orange-very p-2 flex items-center">
                               {{ project.description }}
                         </div>
                   </div>
@@ -78,5 +77,10 @@ export default {
 <style scoped>
 h2 {
       font-size: clamp(2rem, 9vw, 3.5rem);
+}
+
+/* per scrollreveal */
+.sr {
+      visibility: hidden;
 }
 </style>

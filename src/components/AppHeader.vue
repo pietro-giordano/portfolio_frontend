@@ -56,7 +56,7 @@ export default {
             <Navbar />
 
             <div id="jumbotron" class="container mx-auto grid grid-cols lg:grid-cols-2">
-                  <div ref="top" class="sr mt-28 lg:mt-40 px-1 border-2 border-white">
+                  <div ref="top" class="sr mt-28 lg:mt-40 px-3">
                         <div class="font-bold text-first text-orange-very">
                               Hi, It's me
                               <div ref="left" class="sr text-orange-light name">Pietro Giordano</div>
@@ -92,13 +92,15 @@ export default {
                               </li>
                         </ul>
 
-                        <button ref="right"
-                              class="sr mt-8 px-3 py-2 md:px-6 md:py-3 font-bold md:text-lg rounded-3xl text-bblack bg-orange-light shadow-o hover:shadow-none tracking-wider transition-shadow duration-500">
+                        <a ref="right"
+                              href="https://drive.google.com/file/d/1EMmHrqI27OUKgZInekuU0q7nLbpeUMI9/view?usp=drive_link"
+                              download
+                              class="sr inline-block mt-8 px-3 py-2 md:px-6 md:py-3 font-bold md:text-lg rounded-3xl text-bblack bg-orange-light shadow-o hover:shadow-none tracking-wider transition-shadow duration-500">
                               Download CV
-                        </button>
+                        </a>
                   </div>
 
-                  <div ref="bottom" class="sr border-2 border-orange flex justify-center items-center mt-16 lg:mt-20">
+                  <div ref="bottom" class="sr flex justify-center items-center mt-16 lg:mt-20">
                         <div
                               class="w-[280px] h-[280px] md:w-[400px] md:h-[400px] relative flex justify-center items-center animated-border overflow-hidden rounded-full">
                               <img src="../assets/foto1.jpg" alt="" class="w-11/12 h-11/12 z-10 absolute rounded-full">
