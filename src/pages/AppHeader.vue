@@ -1,12 +1,10 @@
 <script>
 import VueWriter from 'vue-writer';
 import scrollreveal from 'scrollreveal';
-import Navbar from './Navbar.vue';
 
 export default {
       name: 'AppHeader',
       components: {
-            Navbar,
             VueWriter
       },
       data() {
@@ -53,7 +51,6 @@ export default {
 
 <template>
       <header id="header">
-            <Navbar />
 
             <div id="jumbotron" class="container mx-auto grid grid-cols lg:grid-cols-2">
                   <div ref="top" class="sr mt-28 lg:mt-40 px-3">

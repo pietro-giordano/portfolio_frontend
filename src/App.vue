@@ -1,34 +1,20 @@
 <script>
-import AppHeader from './components/AppHeader.vue';
-import AboutMe from './components/AboutMe.vue';
-import Skills from './components/Skills.vue';
-import Portfolio from './components/Portfolio.vue';
-import Contact from './components/Contact.vue';
+import Navbar from './components/Navbar.vue';
 import AppFooter from './components/AppFooter.vue';
 
 export default {
       name: 'App',
       components: {
-            AppHeader,
-            AboutMe,
-            Skills,
-            Portfolio,
-            Contact,
+            Navbar,
             AppFooter
       }
 }
 </script>
 
 <template>
-      <AppHeader />
+      <Navbar />
 
-      <AboutMe />
-
-      <Skills />
-
-      <Portfolio />
-
-      <Contact />
+      <router-view></router-view>>
 
       <AppFooter />
 </template>

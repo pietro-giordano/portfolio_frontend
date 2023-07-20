@@ -6,23 +6,23 @@ export default {
                   navLinks: [
                         {
                               title: 'Home',
-                              link: '#header',
+                              link: '/',
                               active: true
                         }, {
                               title: 'About',
-                              link: '#about',
+                              link: '/about-me',
                               active: false
                         }, {
                               title: 'Skills',
-                              link: '#skills',
+                              link: '/skills',
                               active: false
                         }, {
                               title: 'Portfolio',
-                              link: '#portfolio',
+                              link: '/portfolio',
                               active: false
                         }, {
                               title: 'Contact',
-                              link: '#contact',
+                              link: '/contact',
                               active: false
                         },
                   ],
