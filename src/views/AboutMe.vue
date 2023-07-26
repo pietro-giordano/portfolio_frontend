@@ -5,11 +5,12 @@ export default {
       name: 'AboutMe',
       mounted() {
             scrollreveal({
-                  reset: true,
+                  reset: false,
                   distance: '80px',
                   duration: 2000,
                   delay: 200
             })
+            scrollreveal().reveal(this.$refs.top, { origin: 'top' });
             scrollreveal().reveal(this.$refs.bottom, { origin: 'bottom' });
             scrollreveal().reveal(this.$refs.left, { origin: 'left' });
             scrollreveal().reveal(this.$refs.right, { origin: 'right' });
@@ -18,14 +19,14 @@ export default {
 </script>
 
 <template>
-      <section id="about" class="container mx-auto pt-14 md:pt-20 lg:pt-28">
+      <section id="about" class="container mx-auto pt-24 pb-24 md:pt-24 md:pb-20 lg:pt-28">
 
-            <h2 ref="right" class="sr text-orange-very text-lg mb-8 text-center">About <span class="text-orange">Me</span>
+            <h2 ref="top" class="sr text-orange-very text-lg mb-8 text-center">About <span class="text-orange">Me</span>
             </h2>
 
             <div class="grid grid-cols lg:grid-cols-2">
                   <div ref="left" class="sr border-2 border-white flex justify-center items-center">
-                        <div class="w-[280px] h-[280px] md:w-[400px] md:h-[400px] mt-16 rounded-full">
+                        <div class="w-[280px] h-[280px] md:w-[400px] md:h-[400px] mt-10 rounded-full">
                               <img src="../assets/foto1.jpg" alt="" class="rounded-full">
                         </div>
                   </div>

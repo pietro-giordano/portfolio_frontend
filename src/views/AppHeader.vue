@@ -53,7 +53,7 @@ export default {
       <header id="header">
 
             <div id="jumbotron" class="container mx-auto grid grid-cols lg:grid-cols-2">
-                  <div ref="top" class="sr mt-28 lg:mt-40 px-3">
+                  <div ref="top" class="sr mt-24 lg:mt-32 px-3">
                         <div class="font-bold text-first text-orange-very">
                               Hi, It's me
                               <div ref="left" class="sr text-orange-light name">Pietro Giordano</div>
@@ -97,7 +97,7 @@ export default {
                         </a>
                   </div>
 
-                  <div ref="bottom" class="sr flex justify-center items-center mt-16 lg:mt-20">
+                  <div ref="bottom" class="sr flex justify-center items-center my-20 lg:mt-40">
                         <div
                               class="w-[280px] h-[280px] md:w-[400px] md:h-[400px] relative flex justify-center items-center animated-border overflow-hidden rounded-full">
                               <img src="../assets/foto1.jpg" alt="" class="w-11/12 h-11/12 z-10 absolute rounded-full">

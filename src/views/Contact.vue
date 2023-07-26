@@ -17,7 +17,7 @@ export default {
       },
       mounted() {
             scrollreveal({
-                  reset: true,
+                  reset: false,
                   distance: '80px',
                   duration: 2000,
                   delay: 200
@@ -63,7 +63,7 @@ export default {
 </script>
 
 <template>
-      <section id="contact" class="container mx-auto pt-14 md:pt-20 lg:pt-28 mb-10">
+      <section id="contact" class="container mx-auto pt-24 pb-24 md:pt-24 md:pb-20 lg:pt-28">
 
             <div>
                   <h2 ref="top" class="sr text-orange-very text-lg mb-8 text-center">Contact <span
@@ -97,7 +97,7 @@ export default {
                         </div>
 
                         <input ref="bottom" @click="messagePost()" type="submit" value="Send Message"
-                              class="sr block mt-3 mb-8 md:mt-6 px-3 py-2 md:px-6 md:py-3 font-bold md:text-lg rounded-3xl text-bblack bg-orange-light shadow-o hover:shadow-none tracking-wider transition-shadow duration-500">
+                              class="sr block mt-3 md:mt-6 px-3 py-2 md:px-6 md:py-3 font-bold md:text-lg rounded-3xl text-bblack bg-orange-light shadow-o hover:shadow-none tracking-wider transition-shadow duration-500">
                   </form>
             </div>
 

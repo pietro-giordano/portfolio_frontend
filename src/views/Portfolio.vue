@@ -18,7 +18,7 @@ export default {
                   })
 
             scrollreveal({
-                  reset: true,
+                  reset: false,
                   distance: '80px',
                   duration: 2000,
                   delay: 200
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <template>
-      <section id="portfolio" class="container mx-auto pt-14 md:pt-20 lg:pt-28">
+      <section id="portfolio" class="container mx-auto pt-24 pb-20 md:pt-24 lg:pt-28">
 
             <h2 ref="right" class="sr text-orange-very text-lg pb-4 text-center">Latest <span
                         class="text-orange">Project</span>

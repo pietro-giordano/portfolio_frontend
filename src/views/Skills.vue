@@ -13,12 +13,11 @@ export default {
             axios
                   .get('http://127.0.0.1:8000/api/skills')
                   .then(response => {
-                        console.log(response.data);
                         this.skills = response.data.skills;
                   })
 
             scrollreveal({
-                  reset: true,
+                  reset: false,
                   distance: '80px',
                   duration: 2000,
                   delay: 200
@@ -32,7 +31,7 @@ export default {
 </script>
 
 <template>
-      <section id="skills" class="container mx-auto pt-14 md:pt-20 lg:pt-28">
+      <section id="skills" class="container mx-auto pt-24 pb-24 md:pt-24 md:pb-20 lg:pt-28">
 
             <h2 ref="left" class="sr text-orange-very text-lg mb-12 text-center">My <span class="text-orange">Skills</span>
             </h2>
