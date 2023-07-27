@@ -43,9 +43,11 @@ export default {
                               sempre
                               appassionato di informatica, tecnologia, web e dintorni.
                               Passione che ho capito potesse essere un lavoro solo nel 2022 quando ho conseguito il master di
-                              Boolean Careers.
-                              Da lì ho capito che lo sviluppo web (prediligo il backend ma non disdegno sporcarmi le mani
-                              anche nel frontend) sarebbe stato parte della mia vita. <br>
+                              <span class="text-orange-light">Boolean Careers</span>.
+                              Da lì ho capito che lo sviluppo web (prediligo il <span class="text-orange">backend</span> ma
+                              non disdegno sporcarmi le mani
+                              anche nel <span class="text-orange-light">frontend</span>) sarebbe stato parte della mia vita.
+                              <br>
                               Quando non sono immerso nel codice, mi piace passare il tempo all'aria aperta, a prendermi cura
                               del mio fisico facendo sport.
                               Ovviamente non poteva mancare la passione per i videogame, film, serie tv, per la lettura e per
