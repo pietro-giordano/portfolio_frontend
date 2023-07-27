@@ -21,7 +21,7 @@ export default {
                         }, {
                               name: 'linkedin',
                               icon: 'fa-brands fa-linkedin',
-                              link: 'https://www.linkedin.com/in/pietro-giordano87/'
+                              link: 'https://www.linkedin.com/in/pietro-giordano-wd/'
                         }, {
                               name: 'discord',
                               icon: 'fa-brands fa-discord',
@@ -53,7 +53,7 @@ export default {
       <header id="header">
 
             <div id="jumbotron" class="container mx-auto grid grid-cols lg:grid-cols-2">
-                  <div ref="top" class="sr mt-24 lg:mt-32 px-3">
+                  <div ref="top" class="sr mt-24 lg:mt-28 px-3">
                         <div class="font-bold text-first text-orange-very">
                               Hi, It's me
                               <div ref="left" class="sr text-orange-light name">Pietro Giordano</div>
@@ -66,9 +66,15 @@ export default {
                               </h1>
                         </div>
 
-                        <p class="py-5 text-orange-very text-sm md:text-base">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit consequatur?
-                              Itaque vel quisquam nulla assumenda? Tenetur aut fugiat soluta?
+                        <p class="py-3 text-orange-very text-sm md:text-base">
+                              Benvenuto nel mio mondo! <br>
+                              Sono un appassionato di sviluppo web, informatica e tecnologia. Trasformare le idee in realtà
+                              digitali è ciò che rende questo mondo incredibilmente affascinante.
+                              <!--
+                              Welcome to my world! <br>
+                              I am passionate about web development, computing and technology. 
+                              Turning ideas into digital realities is what makes this world incredibly fascinating. 
+                              -->
                         </p>
 
                         <ul class="md:flex mt-2 hidden">
