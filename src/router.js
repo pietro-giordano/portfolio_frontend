@@ -11,23 +11,23 @@ const router = createRouter({
       routes: [
             {
                   path: '/',
-                  name: 'homepage',
+                  name: 'Home',
                   component: AppHeader
             }, {
                   path: '/about-me',
-                  name: 'about-me',
+                  name: 'About',
                   component: AboutMe
             }, {
                   path: '/skills',
-                  name: 'skills',
+                  name: 'Skills',
                   component: Skills
             }, {
                   path: '/portfolio',
-                  name: 'portfolio',
+                  name: 'Portfolio',
                   component: Portfolio
             }, {
                   path: '/contact',
-                  name: 'contact',
+                  name: 'Contact',
                   component: Contact
             }
       ]

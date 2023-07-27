@@ -54,10 +54,10 @@ export default {
                   <!-- hamburger menu -->
                   <ul :class="hamburger ? 'hidden' : 'block'">
                         <li v-for="link, index in navLinks" @click="activeNav(index)" class="my-3 mr-2">
-                              <a :href="link.link" class="p-1 hover:text-orange lg:text-lg"
+                              <router-link :to="link.link" class="p-3 hover:text-orange text-lg"
                                     :class="link.active ? 'text-orange' : 'text-orange-very'">
                                     {{ link.title }}
-                              </a>
+                              </router-link>
                         </li>
                   </ul>
             </div>
@@ -73,10 +73,10 @@ export default {
 
             <ul class="hidden lg:flex">
                   <li v-for="link, index in navLinks" class="ml-4" @click="activeNav(index)">
-                        <a :href="link.link" class="p-3 hover:text-orange text-lg"
+                        <router-link :to="link.link" class="p-3 hover:text-orange text-lg"
                               :class="link.active ? 'text-orange' : 'text-orange-very'">
                               {{ link.title }}
-                        </a>
+                        </router-link>
                   </li>
             </ul>
       </nav>
