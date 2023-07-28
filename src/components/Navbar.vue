@@ -47,7 +47,7 @@ export default {
 
 <template>
       <nav
-            class="bg-bblack container mx-auto fixed start-0 top-0 end-0 z-20 flex justify-between items-start lg:items-center border-white border-2">
+            class="bg-bblack opacity-95 container fixed start-0 top-0 end-0 z-20 flex justify-between items-start lg:items-center">
             <div>
                   <h2 class="text-orange text-xl lg:text-2xl uppercase px-1 my-5">Portfolio</h2>
 

@@ -25,7 +25,7 @@ export default {
 </script>
 
 <template>
-      <section id="about" class="container mx-auto pt-24 pb-24 md:pt-24 lg:pt-28 lg:pb-20">
+      <section id="about" class="container pt-24 pb-24 md:pt-24 lg:pt-28 lg:pb-20">
 
             <h2 ref="top" class="sr text-orange-very text-lg mb-8 text-center">About <span class="text-orange">Me</span>
             </h2>
@@ -37,7 +37,7 @@ export default {
                         </div>
                   </div>
 
-                  <div ref="bottom" class="sr px-12 pt-8 md:pt-14 lg:pt-20 text-center">
+                  <div ref="bottom" class="sr px-12 pt-8 md:pt-14 lg:pt-20">
                         <p class="text-orange-very">
                               Mi chiamo <span class="text-orange">Pietro Giordano</span>, ho {{ getAge }} anni e sono da
                               sempre

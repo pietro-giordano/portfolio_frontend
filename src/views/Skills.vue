@@ -31,7 +31,7 @@ export default {
 </script>
 
 <template>
-      <section id="skills" class="container mx-auto pt-24 pb-24 md:pt-24 md:pb-20 lg:pt-28">
+      <section id="skills" class="container pt-24 pb-24 md:pt-24 md:pb-20 lg:pt-28">
 
             <h2 ref="left" class="sr text-orange-very text-lg mb-12 text-center">My <span class="text-orange">Skills</span>
             </h2>

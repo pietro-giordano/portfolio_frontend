@@ -52,7 +52,7 @@ export default {
 <template>
       <header id="header">
 
-            <div id="jumbotron" class="container mx-auto grid grid-cols lg:grid-cols-2">
+            <div id="jumbotron" class="container grid grid-cols lg:grid-cols-2">
                   <div ref="top" class="sr mt-24 lg:mt-28 px-3">
                         <div class="font-bold text-first text-orange-very">
                               Hi, It's me

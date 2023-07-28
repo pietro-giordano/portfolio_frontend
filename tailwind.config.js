@@ -20,6 +20,16 @@ export default {
                   'o2': '0px 0px 8px 6px #FFA559',
                   'o3': '0px 0px 8px 6px #FF6000'
             },
+            container: {
+                  center: true,
+                  padding: {
+                        DEFAULT: '0.5rem',
+                        sm: '2rem',
+                        lg: '4rem',
+                        xl: '5rem',
+                        '2xl': '6rem',
+                  },
+            }
       },
       plugins: [],
 }

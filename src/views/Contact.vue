@@ -63,7 +63,7 @@ export default {
 </script>
 
 <template>
-      <section id="contact" class="container mx-auto pt-24 pb-24 md:pt-24 md:pb-20 lg:pt-28">
+      <section id="contact" class="container pt-24 pb-24 md:pt-24 md:pb-20 lg:pt-28">
 
             <div>
                   <h2 ref="top" class="sr text-orange-very text-lg mb-8 text-center">Contact <span
