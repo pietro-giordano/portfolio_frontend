@@ -19,4 +19,32 @@ export default {
       <AppFooter />
 </template>
 
-<style></style>
+<style>
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+      scrollbar-width: auto;
+      scrollbar-color: #ffa559 #ffe6c7;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+      width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+      background: #ffe6c7;
+}
+
+*::-webkit-scrollbar-thumb {
+      background-color: #ffa559;
+      border-radius: 10px;
+      border: 0px solid #ffa559;
+}
+
+/* ======================= */
+
+body {
+      overflow-x: hidden;
+}
+</style>
