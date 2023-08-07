@@ -11,7 +11,7 @@ export default {
       },
       mounted() {
             axios
-                  .get('http://127.0.0.1:8000/api/projects')
+                  .get('/public/api/projects')
                   .then(response => {
                         console.log(response.data);
                         this.projects = response.data.projects;
@@ -34,11 +34,11 @@ export default {
 <template>
       <section id="portfolio" class="container pt-24 pb-20 md:pt-24 lg:pt-28">
 
-            <h2 ref="right" class="sr text-orange-very text-lg pb-4 text-center">Latest <span
+            <h2 ref="top" class="sr text-orange-very text-lg pb-4 text-center">Latest <span
                         class="text-orange">Project</span>
             </h2>
 
-            <div ref="left" class="sr px-6">
+            <div ref="bottom" class="sr px-6">
                   <div v-for="project in projects"
                         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-2 border-orange shadow-o3 rounded-xl min-h-80 my-10 p-2">
                         <div class="text-orange-very p-2">

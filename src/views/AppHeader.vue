@@ -22,11 +22,13 @@ export default {
                               name: 'linkedin',
                               icon: 'fa-brands fa-linkedin',
                               link: 'https://www.linkedin.com/in/pietro-giordano-wd/'
-                        }, {
-                              name: 'discord',
-                              icon: 'fa-brands fa-discord',
-                              link: '#'
-                        }, {
+                        }, 
+                        // {
+                        //       name: 'discord',
+                        //       icon: 'fa-brands fa-discord',
+                        //       link: '#'
+                        // }, 
+                        {
                               name: 'github',
                               icon: 'fa-brands fa-github',
                               link: 'https://github.com/pietro-giordano'
@@ -96,7 +98,7 @@ export default {
                         </ul>
 
                         <a ref="right"
-                              href="https://drive.google.com/file/d/1EMmHrqI27OUKgZInekuU0q7nLbpeUMI9/view?usp=drive_link"
+                              href="../assets/PIETRO GIORDANO - cv.pdf"
                               download
                               class="sr inline-block mt-8 px-3 py-2 md:px-6 md:py-3 font-bold md:text-lg rounded-3xl text-bblack bg-orange-light shadow-o hover:shadow-none tracking-wider transition-shadow duration-500">
                               Download CV

@@ -17,8 +17,8 @@ export default {
                               link: '/skills',
                               active: false
                         }, {
-                              title: 'Portfolio',
-                              link: '/portfolio',
+                              title: 'Projects',
+                              link: '/projects',
                               active: false
                         }, {
                               title: 'Contact',
@@ -32,10 +32,19 @@ export default {
       methods: {
 
             activeNav(index) {
-                  this.navLinks.forEach(element => {
-                        element.active = false;
-                  });
-                  this.navLinks[index].active = true;
+                  if(index) {
+                        this.navLinks.forEach(element => {
+                              element.active = false;
+                        });
+                        this.navLinks[index].active = true;
+                        this.hamburger = true;
+                  } else {
+                        this.navLinks.forEach(element => {
+                              element.active = false;
+                        });
+                        this.navLinks[0].active = true;
+                        this.hamburger = true;
+                  }
             },
 
             hamburgerVisibility() {
@@ -49,7 +58,11 @@ export default {
       <nav
             class="bg-bblack opacity-95 container fixed start-0 top-0 end-0 z-20 flex justify-between items-start lg:items-center">
             <div>
-                  <h2 class="text-orange text-xl lg:text-2xl uppercase px-1 my-5">Portfolio</h2>
+                  <h2 class="text-orange text-xl lg:text-2xl uppercase px-1 my-5" @click="activeNav()">
+                        <router-link to="/">
+                              Portfolio
+                        </router-link>
+                  </h2>
 
                   <!-- hamburger menu -->
                   <ul :class="hamburger ? 'hidden' : 'block'">
