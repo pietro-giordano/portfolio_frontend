@@ -61,11 +61,11 @@ export default {
                               </ul>
                         </div>
 
-                        <div class="flex items-center my-5 border-2 border-orange-very">
+                        <div class="flex items-center my-5">
                               <video :src="project.video" controls></video>
                         </div>
 
-                        <div class="md:col-span-2 lg:col-span-1 text-orange-very p-2 flex items-center">
+                        <div class="md:col-span-2 lg:col-span-1 text-orange-very p-2 overflow-auto whitespace-pre-line align-middle max-h-56">
                               {{ project.description }}
                         </div>
                   </div>
