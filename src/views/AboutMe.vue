@@ -18,7 +18,7 @@ export default {
       computed: {
             // calcola età dinamicamente arrotondando in difetto (data di oggi in ms - data di nascita in ms) / (ms in un anno)
             getAge() {
-                  return Math.floor((new Date() - new Date(1987, 9, 9)) / (365 * 24 * 60 * 60 * 1000));
+                  return Math.floor((new Date() - new Date(1987, 8, 9)) / (365 * 24 * 60 * 60 * 1000));
             }
       }
 }
@@ -37,7 +37,7 @@ export default {
                         </div>
                   </div>
 
-                  <div ref="bottom" class="sr px-12 pt-8 md:pt-14 lg:pt-20">
+                  <div ref="bottom" class="sr px-2 lg:px-12 pt-8 md:pt-14 lg:pt-20">
                         <p class="text-orange-very">
                               Mi chiamo <span class="text-orange">Pietro Giordano</span>, ho {{ getAge }} anni e sono da
                               sempre
